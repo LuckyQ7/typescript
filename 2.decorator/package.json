@@ -1,0 +1,21 @@
+{
+  "name": "2.decorator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon --watch dist/ js --exec node ./dist/2.ClassDecorator.js",
+    "start": "concurrently npm:dev:*",
+    "tsc": "tsc src/**/**.ts --target ES5 -w --experimentalDecorators",
+    "ctrl": "ts-node src/**/**.ts",
+    "geginapp": "nodemon --watch src/ -e ts --exec ts-node ./src/**.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "typescript": "^4.8.3"
+  }
+}
